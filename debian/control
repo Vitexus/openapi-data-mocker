@@ -1,0 +1,19 @@
+Source: php-ybelenko-openapi-data-mocker
+Section: php
+Priority: optional
+Maintainer: Vítězslav Dvořák <info@vitexsoftware.cz>
+Build-Depends:
+ debhelper-compat (= 13)
+Standards-Version: 4.7.0
+Homepage: https://github.com/ybelenko/openapi-data-mocker
+Rules-Requires-Root: no
+
+Package: php-ybelenko-openapi-data-mocker
+Architecture: all
+Multi-Arch: foreign
+Depends:
+ ${misc:Depends},
+ php-ybelenko-openapi-data-mocker-interfaces
+Description: OpenAPI Data Mocker - fake data generator
+ Library that generates fake data from Swagger 2.0 and OpenAPI 3.0
+ specifications. Useful for testing and mocking API responses.
